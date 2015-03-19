@@ -1,4 +1,8 @@
-package com.softserveinc.calendar.helper;
+/**
+ * Copyright (C) 2015 Ihor Klyufas
+ */
+
+package com.gorik.calendar.helper;
 
 public class Constants {
 

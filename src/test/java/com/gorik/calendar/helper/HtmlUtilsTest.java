@@ -1,10 +1,16 @@
-package com.softserveinc.calendar.helper;
+/**
+ * Copyright (C) 2015 Ihor Klyufas
+ */
+
+package com.gorik.calendar.helper;
 
 import static org.junit.Assert.*;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import com.gorik.calendar.helper.HTMLUtils;
 
 public class HtmlUtilsTest {
 
@@ -199,5 +205,4 @@ public class HtmlUtilsTest {
 		expected = defaultHtml.getOption(2, false, "Option 2");
 		assertEquals(expected, actual);
 	}
-
 }

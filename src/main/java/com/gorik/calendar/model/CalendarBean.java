@@ -1,4 +1,8 @@
-package com.softserveinc.calendar.model;
+/**
+ * Copyright (C) 2015 Ihor Klyufas
+ */
+
+package com.gorik.calendar.model;
 
 import java.text.DateFormatSymbols;
 import java.text.ParseException;
@@ -13,7 +17,7 @@ import java.util.Locale;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 
-import com.softserveinc.calendar.helper.Constants;
+import com.gorik.calendar.helper.Constants;
 
 public class CalendarBean {
 
@@ -159,5 +163,4 @@ public class CalendarBean {
 	public boolean equals(Object obj) {
 		return EqualsBuilder.reflectionEquals(this, obj);
 	}
-
 }

@@ -1,4 +1,8 @@
-package com.softserveinc.calendar.helper;
+/**
+ * Copyright (C) 2015 Ihor Klyufas
+ */
+
+package com.gorik.calendar.helper;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -12,6 +16,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.MessageSource;
+
+import com.gorik.calendar.helper.HTMLTemplate;
 
 public class HTMLTemplateTest {
 
@@ -31,20 +37,6 @@ public class HTMLTemplateTest {
 	@After
 	public void tearDown() throws Exception {
 	}
-	
-/*	@Test
-	public void testHTMLTemplate() {
-		HTMLTemplate actual = defaultHTML;
-		HTMLTemplate expected = new HTMLTemplate();
-		assertEquals(expected, actual);
-	}
-	
-	@Test
-	public void testHTMLTemplateParam() {
-		HTMLTemplate actual = paramHTML;
-		HTMLTemplate expected = new HTMLTemplate(locale, messageSource);
-		assertEquals(expected, actual);
-	}*/
 	
 	@Test
 	public void testGetPageHeader() throws UnsupportedEncodingException {
@@ -77,5 +69,4 @@ public class HTMLTemplateTest {
 		assertFalse(defaultHTML.equals(new Object()));
 		assertFalse(defaultHTML.equals(null));
 	}
-
 }

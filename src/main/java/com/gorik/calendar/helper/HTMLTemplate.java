@@ -1,4 +1,8 @@
-package com.softserveinc.calendar.helper;
+/**
+ * Copyright (C) 2015 Ihor Klyufas
+ */
+
+package com.gorik.calendar.helper;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Locale;
@@ -8,7 +12,7 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.springframework.context.MessageSource;
 
-import com.softserveinc.calendar.controller.interfaces.CalendarInterface;
+import com.gorik.calendar.controller.interfaces.CalendarInterface;
 
 public class HTMLTemplate {
 	

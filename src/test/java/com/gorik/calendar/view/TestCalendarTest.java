@@ -1,4 +1,8 @@
-package com.softserveinc.calendar.view;
+/**
+ * Copyright (C) 2015 Ihor Klyufas
+ */
+
+package com.gorik.calendar.view;
 
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
@@ -14,8 +18,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.MessageSource;
 
-import com.softserveinc.calendar.controller.interfaces.CalendarInterface;
-import com.softserveinc.calendar.model.CalendarBean;
+import com.gorik.calendar.controller.interfaces.CalendarInterface;
+import com.gorik.calendar.model.CalendarBean;
+import com.gorik.calendar.view.HorizontalCalendar;
+import com.gorik.calendar.view.TestCalendar;
 
 public class TestCalendarTest {
 
@@ -42,5 +48,4 @@ public class TestCalendarTest {
 		String expected = calendar.showCalendar(locale, messageSource, calendarBean);
 		assertTrue(expected.contains("<div align=\"center\"><form method=\"post\"><input type=\"hidden\" name=\"prevYearButton\" value=\"prevYearButton\"></input>"));
 	}
-
 }

@@ -1,4 +1,8 @@
-package com.softserveinc.calendar.controller;
+/**
+ * Copyright (C) 2015 Ihor Klyufas
+ */
+
+package com.gorik.calendar.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -21,11 +25,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.context.ServletContextAware;
 import org.springframework.web.context.support.WebApplicationContextUtils;
 
-import com.softserveinc.calendar.controller.interfaces.CalendarInterface;
-import com.softserveinc.calendar.helper.Constants;
-import com.softserveinc.calendar.model.CalendarBean;
-import com.softserveinc.calendar.view.HTMLLayout;
+import com.gorik.calendar.controller.interfaces.CalendarInterface;
+import com.gorik.calendar.helper.Constants;
+import com.gorik.calendar.model.CalendarBean;
+import com.gorik.calendar.view.HTMLLayout;
 
+/**
+ * This class handles calendar view depending on user's locale (set up
+ * browser language).
+ * 
+ * @author Ihor Klyufas
+ */
 @Controller
 @RequestMapping("/")
 public class ViewMapController extends HttpServlet implements ServletContextAware, MessageSourceAware {
@@ -88,7 +98,7 @@ public class ViewMapController extends HttpServlet implements ServletContextAwar
 	}
 	
 	/**
-	 * set buttons into the calendar model
+	 * Set buttons into the calendar model
 	 * @param request
 	 */
 	private void setCalendarButtons(HttpServletRequest request) {

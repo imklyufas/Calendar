@@ -1,4 +1,8 @@
-package com.softserveinc.calendar.view;
+/**
+ * Copyright (C) 2015 Ihor Klyufas
+ */
+
+package com.gorik.calendar.view;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Locale;
@@ -6,10 +10,10 @@ import java.util.Map;
 
 import org.springframework.context.MessageSource;
 
-import com.softserveinc.calendar.controller.interfaces.CalendarInterface;
-import com.softserveinc.calendar.helper.Constants;
-import com.softserveinc.calendar.helper.HTMLTemplate;
-import com.softserveinc.calendar.helper.HTMLUtils;
+import com.gorik.calendar.controller.interfaces.CalendarInterface;
+import com.gorik.calendar.helper.Constants;
+import com.gorik.calendar.helper.HTMLTemplate;
+import com.gorik.calendar.helper.HTMLUtils;
 
 public class HTMLLayout {
 
@@ -76,5 +80,4 @@ public class HTMLLayout {
 	public void addBody(String body) {
 		this.body = body;
 	}
-
 }

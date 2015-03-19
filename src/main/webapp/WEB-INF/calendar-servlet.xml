@@ -15,11 +15,11 @@
 	<!-- <context:spring-configured /> -->
 
 	<!-- packages to be scanned -->
-	<context:component-scan base-package="com.softserveinc.calendar.controller" />
+	<context:component-scan base-package="com.gorik.calendar.controller" />
 
-	<bean id="horizontal" class="com.softserveinc.calendar.view.HorizontalCalendar" />
-	<bean id="vertical" class="com.softserveinc.calendar.view.VerticalCalendar" />
-	<bean id="test" class="com.softserveinc.calendar.view.TestCalendar" />
+	<bean id="horizontal" class="com.gorik.calendar.view.HorizontalCalendar" />
+	<bean id="vertical" class="com.gorik.calendar.view.VerticalCalendar" />
+	<bean id="test" class="com.gorik.calendar.view.TestCalendar" />
 
 	<!-- Localization and Internationalization -->
 	<bean id="messageSource"

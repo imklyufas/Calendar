@@ -1,4 +1,8 @@
-package com.softserveinc.calendar.model;
+/**
+ * Copyright (C) 2015 Ihor Klyufas
+ */
+
+package com.gorik.calendar.model;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -15,6 +19,8 @@ import java.util.Locale;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import com.gorik.calendar.model.CalendarBean;
 
 public class CalendarBeanTest {
 
@@ -54,7 +60,7 @@ public class CalendarBeanTest {
 
 	@Test
 	public void testGetYear() {
-		int expected = 2012;
+		int expected = Calendar.getInstance().get(Calendar.YEAR);
 		int actual = defaultCalendar.getYear();
 		assertEquals(expected, actual);
 	}
@@ -148,5 +154,4 @@ public class CalendarBeanTest {
 		assertFalse(defaultCalendar.equals(new Object()));
 		assertFalse(defaultCalendar.equals(null));
 	}
-
 }

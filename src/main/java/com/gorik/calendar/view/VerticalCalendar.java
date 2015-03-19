@@ -1,4 +1,8 @@
-package com.softserveinc.calendar.view;
+/**
+ * Copyright (C) 2015 Ihor Klyufas
+ */
+
+package com.gorik.calendar.view;
 
 import java.io.UnsupportedEncodingException;
 import java.text.ParseException;
@@ -10,11 +14,11 @@ import java.util.Locale;
 
 import org.springframework.context.MessageSource;
 
-import com.softserveinc.calendar.controller.interfaces.CalendarInterface;
-import com.softserveinc.calendar.helper.Constants;
-import com.softserveinc.calendar.helper.HTMLTemplate;
-import com.softserveinc.calendar.helper.HTMLUtils;
-import com.softserveinc.calendar.model.CalendarBean;
+import com.gorik.calendar.controller.interfaces.CalendarInterface;
+import com.gorik.calendar.helper.Constants;
+import com.gorik.calendar.helper.HTMLTemplate;
+import com.gorik.calendar.helper.HTMLUtils;
+import com.gorik.calendar.model.CalendarBean;
 
 public class VerticalCalendar implements CalendarInterface {
 
